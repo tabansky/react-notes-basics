@@ -12,6 +12,20 @@
   border-radius: 6px;
 }
 
+.note button {
+  margin-top: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note button:hover {
+  background: darkred;
+}
+
 button {
   padding: 8px 12px;
   background: #007bff;

@@ -13,7 +13,12 @@ function App() {
     { id: 4, title: "Map", text: "The way to render a list of items in React, is to use the map function with specified keys" },
     { id: 5, title: "useEffect", text: "Hook that allows a component to remember data between rerenders." },
     { id: 6, title: "Controlled components", text: "Controlled components are fields whose value is managed entirely by state (useState)." },
+    { id: 7, title: "Function call via props", text: "In JSX you can't pass a function call - only a reference or a wrapper (arrow function)" },
   ])
+
+  function handleDeleteNote(id) {
+    setNotes(prevNotes => prevNotes.filter(note => note.id !== id));
+  }
 
   function handleAddNote() {
     if (!noteTitle.trim() || !noteText.trim()) return;
@@ -50,7 +55,7 @@ function App() {
       </div>
 
       {notes.map((note) => (
-        <Note key={note.id} title={note.title} text={note.text} />
+        <Note key={note.id} title={note.title} text={note.text} onDelete={() => handleDeleteNote(note.id)} />
       ))}
     </div>
   )
