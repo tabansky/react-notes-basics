@@ -53,3 +53,51 @@ input, textarea {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
+.title {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.left,
+.right {
+  display: flex;
+  min-width: 200px;
+  display: block;
+}
+
+.right {
+  padding-top: 6px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.right select,
+.left input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.left input {
+  width: 100%;
+}
+
+.left input:focus,
+.right select:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
