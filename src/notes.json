@@ -6,5 +6,7 @@
     { "id": 5, "title": "useState", "text": "Hook that allows a component to remember data between rerenders." },
     { "id": 6, "title": "Controlled components", "text": "Controlled components are fields whose value is managed entirely by state (useState)." },
     { "id": 7, "title": "Function call via props", "text": "In JSX you can't pass a function call - only a reference or a wrapper (arrow function)" },
-    { "id": 8, "title": "useEffect", "text": "The effect will be called every time the state or variable changes" }
+    { "id": 8, "title": "useEffect", "text": "The effect will be called every time the state or variable changes" },
+    { "id": 9, "title": "Transferring data from a child to a parent", "text": "You can transfer data from a child to a parent using callback function passed as a prop" }
+
 ]

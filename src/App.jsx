@@ -2,11 +2,10 @@ import './App.css'
 
 import { useEffect, useState } from 'react'
 import Note from './components/Note'
+import Form from './components/Form'
 import defaultNotes from './notes.json'
 
 function App() {
-  const [noteTitle, setNoteTitle] = useState('');
-  const [noteText, setNoteText] = useState('');
   const [notes, setNotes] = useState(() => {
     const savedNotes = localStorage.getItem('notes');
     return savedNotes ? JSON.parse(savedNotes) : defaultNotes;
@@ -16,19 +15,12 @@ function App() {
     setNotes(prevNotes => prevNotes.filter(note => note.id !== id));
   }
 
-  function handleAddNote() {
-    if (!noteTitle.trim() || !noteText.trim()) return;
-  
-    const newNote = {
-      id: Date.now(),
-      title: noteTitle,
-      text: noteText
-    };
-  
+  function handleAddNote(title, text) {
+    console.log(title, text);
+    
+
+    const newNote = { id: Date.now(), title, text };
     setNotes(prevNotes => [...prevNotes, newNote]);
-  
-    setNoteTitle('');
-    setNoteText('');
   }
 
   useEffect(() => {
@@ -39,20 +31,7 @@ function App() {
     <div className='app'>
       <h1>React Notes Basics</h1>
 
-      <div className="form">
-        <input
-          type="text"
-          placeholder="Title"
-          value={noteTitle}
-          onChange={(e) => setNoteTitle(e.target.value)}
-        />
-        <textarea
-          placeholder="Text"
-          value={noteText}
-          onChange={(e) => setNoteText(e.target.value)}
-        />
-        <button onClick={handleAddNote}>Create</button>
-      </div>
+      <Form onAdd={handleAddNote} />
 
       {
         notes.length 
