@@ -1,12 +1,34 @@
-# React + Vite
+# 📝 React Notes Basics
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple **Notes Manager** application built with **React**.  
+It was created as a hands-on way to learn and practice the **fundamentals of React** through real implementation.
 
-Currently, two official plugins are available:
+## 🚀 Project Goal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this project is to **master the core concepts of React** by building a working application from scratch.  
+It focuses on writing clean and understandable React code without relying on external UI libraries or advanced tools.
 
-## Expanding the ESLint configuration
+![React Notes Basics](./public/preview.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Features Covered (React Fundamentals)
+
+This app was built step-by-step while learning the following React features:
+
+- ✅ Functional components and JSX
+- ✅ Props and state management
+- ✅ Event handling
+- ✅ Controlled components and forms
+- ✅ Conditional rendering
+- ✅ Lists rendering and unique keys
+- ✅ `useState` and `useEffect` hooks
+- ✅ `useRef` for direct DOM access
+- ✅ Lifting state up and component communication
+- ✅ Creating and deleting notes
+- ✅ Editing notes using a modal component
+- ✅ Search and sort functionality
+- ✅ Saving and loading notes using `localStorage`
+- ✅ Basic layout and styling (without CSS frameworks)
+
+---
