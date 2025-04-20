@@ -12,7 +12,7 @@
   border-radius: 6px;
 }
 
-.note button {
+.note #delete-button {
   margin-top: 10px;
   background: crimson;
   color: white;
@@ -22,8 +22,23 @@
   cursor: pointer;
 }
 
-.note button:hover {
+.note #delete-button:hover {
   background: darkred;
+}
+
+.note #edit-button {
+  margin-top: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.note #edit-button:hover {
+  background: #0056b3;
 }
 
 button {
